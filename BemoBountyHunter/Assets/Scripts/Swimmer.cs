@@ -14,7 +14,7 @@ public class Swimmer : MonoBehaviour
     [SerializeField] InputActionReference leftCtrlVelocity;
     [SerializeField] InputActionReference rightCtrlSwimRef;
     [SerializeField] InputActionReference rightCtrlVelocity;
-    [SerializeField] Transform forwardReference;
+    [SerializeField] Transform trackingReference;
 
     Rigidbody _rigidbody;
     float _cooldowntimer;
@@ -30,6 +30,18 @@ public class Swimmer : MonoBehaviour
         if(_cooldowntimer > mintime && leftCtrlSwimRef.action.IsPressed() && rightCtrlSwimRef.action.IsPressed()){
             var leftHandVelocity = leftCtrlVelocity.action.ReadValue<Vector3>();
             var rightHandVelocity = rightCtrlVelocity.action.ReadValue<Vector3>();
+            Vector3 localVelocity = leftHandVelocity + rightHandVelocity;
+            localVelocity *= -1;
+
+            if(localVelocity.sqrMagnitude > minforce * minforce){
+                Vector3 worldVelocity = trackingReference.TransformDirection(localVelocity);
+                _rigidbody.AddForce(worldVelocity * swimforce, ForceMode.Acceleration);
+                _cooldowntimer = 0f;
+            }
+
+            if(_rigidbody.velocity.sqrMagnitude > 0.01f){
+                _rigidbody.AddForce(-_rigidbody.velocity * dragforce, ForceMode.Acceleration);
+            }
         }
     }
 }
