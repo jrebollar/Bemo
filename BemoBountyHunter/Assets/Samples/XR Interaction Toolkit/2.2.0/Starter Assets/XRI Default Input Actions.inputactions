@@ -88,6 +88,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Velocity",
+                    "type": "Value",
+                    "id": "8b47ab96-a73c-4393-8101-755637278b1e",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -198,6 +207,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Tracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "12197828-398a-4d68-88ed-740a77296806",
+                    "path": "<OculusTouchController>{LeftHand}/devicePose/velocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Velocity",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -578,6 +598,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Velocity",
+                    "type": "Value",
+                    "id": "42374305-1f21-479f-bdea-e4dd41457f7f",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "bToggle",
+                    "type": "Button",
+                    "id": "9a6df20a-9d42-47dd-a89e-7ae6bee6beff",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -688,6 +726,28 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Tracking State",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa12b3ce-46ae-4389-8689-98b9d2968f30",
+                    "path": "<OculusTouchController>{RightHand}/devicePose/velocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0d54eab1-65db-4eef-a719-4f83156857ff",
+                    "path": "<OculusTouchController>/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "bToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1017,7 +1077,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",                
+                    "name": "",
                     "id": "31d838df-4d4e-4c16-a373-b9c07d9d2e2a",
                     "path": "<XRController>{RightHand}/Primary2DAxis",
                     "interactions": "Sector(directions=12,sweepBehavior=1),Sector(directions=2,sweepBehavior=2)",

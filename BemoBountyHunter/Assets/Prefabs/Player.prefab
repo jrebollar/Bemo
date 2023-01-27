@@ -1523,14 +1523,13 @@ MonoBehaviour:
   mintime: 0
   leftCtrlSwimRef: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
-  leftCtrlVelocity: {fileID: 5590085483536300293, guid: c348712bda248c246b8c49b3db54643f,
+  leftCtrlVelocity: {fileID: -5881534340602611388, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   rightCtrlSwimRef: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
-  rightCtrlVelocity: {fileID: -1606022868619890534, guid: c348712bda248c246b8c49b3db54643f,
+  rightCtrlVelocity: {fileID: 5845950629713952253, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   trackingReference: {fileID: 5169034091026700804}
-  swimSound: {fileID: 8200748261981818150}
 --- !u!114 &3331594179357487645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1544,7 +1543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   net: {fileID: 6768085655784400136}
-  toggleBtn: {fileID: -5779427998670752211, guid: c348712bda248c246b8c49b3db54643f,
+  toggleBtn: {fileID: 4280769024922168726, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
 --- !u!82 &8200748261981818150
 AudioSource:
