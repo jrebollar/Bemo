@@ -44,13 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38a6dc33ba2cb9248861de68ee492abc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flockUnitPrefab: {fileID: 7826760479577216726, guid: 448d22c3fbe29bf47bd2cf9a3603fa9f,
-    type: 3}
+  flockUnitPrefab:
+  - {fileID: 7826760479577216726, guid: 448d22c3fbe29bf47bd2cf9a3603fa9f, type: 3}
+  - {fileID: 7826760479577216726, guid: 448d22c3fbe29bf47bd2cf9a3603fa9f, type: 3}
+  - {fileID: 7826760479577216726, guid: 448d22c3fbe29bf47bd2cf9a3603fa9f, type: 3}
+  - {fileID: 7826760479577216726, guid: 448d22c3fbe29bf47bd2cf9a3603fa9f, type: 3}
+  - {fileID: 4406673457591979665, guid: 97eccb17c973e7047821c504f8162432, type: 3}
   flockSize: 100
   spawnBounds: {x: 10, y: 5, z: 10}
   _minSpeed: 2
   _maxSpeed: 4
-  _cohesionDistance: 6.1
+  _cohesionDistance: 5.19
   _avoidanceDistance: 3.77
   _aligementDistance: 0
   _obstacleDistance: 6.3
