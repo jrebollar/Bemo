@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class Flock : MonoBehaviour
 {
+    [SerializeField] private Boolean spawnBemo;
+
     [Header("Spawn Setup")]
+    [SerializeField] private FlockUnit bemoPrefab = new FlockUnit();
     [SerializeField] private FlockUnit[] flockUnitPrefab = new FlockUnit[5];
     [SerializeField] private int flockSize;
     [SerializeField] private Vector3 spawnBounds;
@@ -65,6 +68,7 @@ public class Flock : MonoBehaviour
     public float obstacleWeight { get { return _obstacleWeight; } }
 
     public FlockUnit[] allUnits { get; set; }
+    public FlockUnit bemo { get; set; }
 
     private void Start()
     {
@@ -81,16 +85,33 @@ public class Flock : MonoBehaviour
 
     private void GenerateUnits()
     {
-        allUnits = new FlockUnit[flockSize];
+        if (spawnBemo)
+        {
+            allUnits = new FlockUnit[flockSize+1];
+        } else
+        {
+            allUnits = new FlockUnit[flockSize];
+
+        }
         for (int i = 0; i < flockSize; i++)
+        {
+                var randomVector = UnityEngine.Random.insideUnitSphere;
+                randomVector = new Vector3(randomVector.x * spawnBounds.x, randomVector.y * spawnBounds.y, randomVector.z * spawnBounds.z);
+                var spawnPosition = transform.position + randomVector;
+                var rotation = Quaternion.Euler(0, UnityEngine.Random.Range(0, 360), 0);
+                allUnits[i] = Instantiate(flockUnitPrefab[UnityEngine.Random.Range(0, 5)], spawnPosition, rotation);
+                allUnits[i].AssignFlock(this);
+                allUnits[i].InitializeSpeed(UnityEngine.Random.Range(minSpeed, maxSpeed));
+        }
+        if (spawnBemo)
         {
             var randomVector = UnityEngine.Random.insideUnitSphere;
             randomVector = new Vector3(randomVector.x * spawnBounds.x, randomVector.y * spawnBounds.y, randomVector.z * spawnBounds.z);
             var spawnPosition = transform.position + randomVector;
             var rotation = Quaternion.Euler(0, UnityEngine.Random.Range(0, 360), 0);
-            allUnits[i] = Instantiate(flockUnitPrefab[UnityEngine.Random.Range(0, 5)], spawnPosition, rotation);
-            allUnits[i].AssignFlock(this);
-            allUnits[i].InitializeSpeed(UnityEngine.Random.Range(minSpeed, maxSpeed));
+            allUnits[flockSize] = Instantiate(bemoPrefab, spawnPosition, rotation);
+            allUnits[flockSize].AssignFlock(this);
+            allUnits[flockSize].InitializeSpeed(maxSpeed);
         }
     }
 }
