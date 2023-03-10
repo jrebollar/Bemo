@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 710809116431558793}
   - component: {fileID: 6690127611272904678}
   - component: {fileID: 1697113975423463736}
+  - component: {fileID: 5642201296389572340}
   m_Layer: 0
   m_Name: Eel
   m_TagString: Fish
@@ -71,6 +72,26 @@ CapsuleCollider:
   m_Height: 6.334591
   m_Direction: 2
   m_Center: {x: 0, y: 0.19999999, z: -0.58127546}
+--- !u!95 &5642201296389572340
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186509661396234803}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e41a851973cc2cc49b75f49c70e5eaad, type: 3}
+  m_Controller: {fileID: 9100000, guid: bf1d8c6b5a8fe6e46bc0e06eca19707c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1164020785626944024
 GameObject:
   m_ObjectHideFlags: 0

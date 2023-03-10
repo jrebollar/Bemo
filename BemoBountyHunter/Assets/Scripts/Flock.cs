@@ -68,7 +68,7 @@ public class Flock : MonoBehaviour
     public float obstacleWeight { get { return _obstacleWeight; } }
 
     public FlockUnit[] allUnits { get; set; }
-    public FlockUnit bemo { get; set; }
+    //public FlockUnit bemo { get; set; }
 
     private void Start()
     {

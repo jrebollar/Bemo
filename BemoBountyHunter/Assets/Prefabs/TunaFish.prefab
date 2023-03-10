@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 7570377612364204639}
   - component: {fileID: 1722447714705788857}
   - component: {fileID: 6212162807262033746}
+  - component: {fileID: 2220897112896936734}
   m_Layer: 0
   m_Name: TunaFish
   m_TagString: Fish
@@ -421,6 +422,26 @@ CapsuleCollider:
   m_Height: 3.1270757
   m_Direction: 2
   m_Center: {x: -0.046199054, y: -0.09804487, z: -0.3072188}
+--- !u!95 &2220897112896936734
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7080981295210795237}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: c7ddb263aba8cba45bfeaa4a9cb66cef, type: 3}
+  m_Controller: {fileID: 9100000, guid: 36e099be65f97d54abd9b7e33ea292e8, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &7731076208333874682
 GameObject:
   m_ObjectHideFlags: 0

@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 7826760479577216726}
   - component: {fileID: 8912055463597108353}
   - component: {fileID: 6756092657356886789}
+  - component: {fileID: 4850807647663991798}
   m_Layer: 0
   m_Name: BrownFish
   m_TagString: Fish
@@ -118,6 +119,26 @@ CapsuleCollider:
   m_Height: 1.7618377
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &4850807647663991798
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741784004382843988}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 56248770ac2f2574e8a2f5ef4d0baf51, type: 3}
+  m_Controller: {fileID: 9100000, guid: 7dbe187111e1a1a468e36e34f7004e9a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1610008460243678399
 GameObject:
   m_ObjectHideFlags: 0

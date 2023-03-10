@@ -834,6 +834,8 @@ GameObject:
   - component: {fileID: 5881432789787812896}
   - component: {fileID: 2530446902416242976}
   - component: {fileID: -6278033506769058256}
+  - component: {fileID: 4029973598555764776}
+  - component: {fileID: 4356480719883756342}
   m_Layer: 0
   m_Name: Squid
   m_TagString: Fish
@@ -894,6 +896,43 @@ CapsuleCollider:
   m_Height: 2.7410374
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &4029973598555764776
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6545097340604350106}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: a9d6dc11a4b380a4f96ff69589a1284b, type: 3}
+  m_Controller: {fileID: 9100000, guid: a933a40b5ab60504db87db7a2f9bcfa2, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!111 &4356480719883756342
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6545097340604350106}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 4026694985428944282, guid: a9d6dc11a4b380a4f96ff69589a1284b,
+    type: 3}
+  m_Animations:
+  - {fileID: 4026694985428944282, guid: a9d6dc11a4b380a4f96ff69589a1284b, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &6643690127089910873
 GameObject:
   m_ObjectHideFlags: 0
