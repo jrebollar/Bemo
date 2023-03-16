@@ -609,7 +609,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "bToggle",
+                    "name": "primaryToggle",
                     "type": "Button",
                     "id": "9a6df20a-9d42-47dd-a89e-7ae6bee6beff",
                     "expectedControlType": "Button",
@@ -743,11 +743,11 @@
                 {
                     "name": "",
                     "id": "0d54eab1-65db-4eef-a719-4f83156857ff",
-                    "path": "<OculusTouchController>/primaryButton",
+                    "path": "<OculusTouchController>{RightHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "bToggle",
+                    "action": "primaryToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
