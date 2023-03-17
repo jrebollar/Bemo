@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 2812732575353869556}
   - component: {fileID: 5505384601080771982}
   - component: {fileID: 2355976706500261347}
+  - component: {fileID: 744662806479126918}
   m_Layer: 0
   m_Name: Whale
   m_TagString: Fish
@@ -263,6 +264,26 @@ CapsuleCollider:
   m_Height: 4.562935
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.26488924}
+--- !u!95 &744662806479126918
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3189399504098119246}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 4ab452801fdd37c40b4cf4517d18ec64, type: 3}
+  m_Controller: {fileID: 9100000, guid: 8cce6e567f1f79c4c9f690c11c1f4ad9, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &3681568208601853905
 GameObject:
   m_ObjectHideFlags: 0

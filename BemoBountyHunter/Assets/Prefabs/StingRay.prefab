@@ -229,6 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1624303758686987603}
   - component: {fileID: 997248139778508217}
+  - component: {fileID: 8141387865256683760}
   m_Layer: 0
   m_Name: StingRay
   m_TagString: Fish
@@ -275,6 +276,26 @@ MonoBehaviour:
   - {x: -1, y: 0, z: 0}
   - {x: 0, y: 1, z: 0}
   - {x: 0, y: -1, z: 0}
+--- !u!95 &8141387865256683760
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144134557147791337}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: da5e8f2a60daebf4ba860b00a259ab38, type: 3}
+  m_Controller: {fileID: 9100000, guid: 7e21f68ffc39d4642bb91b84810a6864, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &3020216547149288891
 GameObject:
   m_ObjectHideFlags: 0

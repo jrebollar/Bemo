@@ -587,6 +587,7 @@ GameObject:
   - component: {fileID: 5099306813805404590}
   - component: {fileID: 5237458406105780014}
   - component: {fileID: 2423181937653227389}
+  - component: {fileID: 4892601850585103029}
   m_Layer: 0
   m_Name: Hammerhead
   m_TagString: Fish
@@ -647,6 +648,26 @@ MonoBehaviour:
   - {x: -1, y: 0, z: 0}
   - {x: 0, y: 1, z: 0}
   - {x: 0, y: -1, z: 0}
+--- !u!95 &4892601850585103029
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5588879362379873044}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: f4227fa20e2238846b919d25f1aabe2e, type: 3}
+  m_Controller: {fileID: 9100000, guid: de00959df6b640c48a1a14013382a662, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &5635290047473661556
 GameObject:
   m_ObjectHideFlags: 0
