@@ -34,4 +34,8 @@ public class SceneSelection : MonoBehaviour
     {
         SceneManager.LoadScene("GameOver");
     }
+    public void LoadEnd()
+    {
+        SceneManager.LoadScene("EndGame");
+    }
 }
