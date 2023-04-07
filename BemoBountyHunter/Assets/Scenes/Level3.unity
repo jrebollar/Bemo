@@ -2208,6 +2208,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeveloperMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 3973774585851032872, guid: 2ba96953792686448850cf7633b47b66,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ba96953792686448850cf7633b47b66, type: 3}
 --- !u!114 &1394680263 stripped
@@ -2981,6 +2986,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.r
       value: 0.034042373
+      objectReference: {fileID: 0}
+    - target: {fileID: 5169034090979748074, guid: 1b61d6f840e6d6b4291d6a9bb1253d3e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5169034091026700800, guid: 1b61d6f840e6d6b4291d6a9bb1253d3e,
         type: 3}
