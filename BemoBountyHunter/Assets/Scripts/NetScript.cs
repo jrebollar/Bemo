@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 public class NetScript : MonoBehaviour
 {
     [SerializeField] private SceneSelection a;
+    public AudioSource audioPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        audioPlayer = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class NetScript : MonoBehaviour
         if (obj.tag == "BEMO")
         {
             Debug.Log("it hit");
+            audioPlayer.Play();
             Scene scene = SceneManager.GetActiveScene();
             if (scene.name == "Level1")
             {
