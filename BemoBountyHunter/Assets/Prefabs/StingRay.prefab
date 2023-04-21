@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8336643311302309491}
   m_Layer: 0
   m_Name: StingRay
-  m_TagString: Untagged
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,8 +121,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.008623639, y: 0.019942312, z: 0.0017606958}
-  m_Center: {x: -0.00315882, y: -0.018138137, z: 0.000028869981}
+  m_Size: {x: 0.002640615, y: 0.019942312, z: 0.0017606958}
+  m_Center: {x: -0.00016730874, y: -0.018138137, z: 0.000028869894}
 --- !u!1 &446556587175364060
 GameObject:
   m_ObjectHideFlags: 0
