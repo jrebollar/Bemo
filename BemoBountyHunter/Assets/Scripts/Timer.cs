@@ -12,6 +12,8 @@ public class Timer : MonoBehaviour
     public float startTimeSeconds;
 
     [SerializeField] GameObject secretEnding;
+
+     [SerializeField] Camera cam;
     private void Start()
     {
         curTime = startTimeSeconds;
@@ -71,6 +73,12 @@ public class Timer : MonoBehaviour
 
     private void ActivateSecretEnding(){
         secretEnding.SetActive(true);
+
+        RenderSettings.fog = true;
+        RenderSettings.fogColor = Color.red;
+        RenderSettings.fogDensity = 0.1f;
+
+        cam.backgroundColor = Color.black;
     }
 }
 

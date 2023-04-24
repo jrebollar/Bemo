@@ -67,7 +67,7 @@ public class FlockUnit : MonoBehaviour
 		for (int i = 0; i < allUnits.Length; i++)
 		{
 			var currentUnit = allUnits[i];
-			if (currentUnit != this)
+			if (currentUnit != this && currentUnit != null)
 			{
 				float currentNeighbourDistanceSqr = Vector3.SqrMagnitude(currentUnit.myTransform.position - myTransform.position);
 				if (currentNeighbourDistanceSqr <= assignedFlock.cohesionDistance * assignedFlock.cohesionDistance)

@@ -79,7 +79,7 @@ public class Flock : MonoBehaviour
     {
         for (int i = 0; i < allUnits.Length; i++)
         {
-            if(allUnits[i] != null )
+            if(allUnits[i] != null)
                 allUnits[i].MoveUnit();
         }
     }
