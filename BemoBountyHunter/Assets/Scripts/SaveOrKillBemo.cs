@@ -10,9 +10,13 @@ public class SaveOrKillBemo : MonoBehaviour
     public void Ending1()
     {
         goodEnding.SetActive(true);
+        GameObject obj = GameObject.Find("Options");
+        Destroy(obj);
     }
     public void Ending2()
     {
-        badEnding.SetActive(true);;
+        badEnding.SetActive(true);
+        GameObject obj = GameObject.Find("Options");
+        Destroy(obj);
     }
 }

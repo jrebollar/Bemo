@@ -32,7 +32,23 @@ public class NetScript : MonoBehaviour
         if (obj.tag == "BEMO")
         {
             Debug.Log("it hit");
-            SceneManager.LoadScene("MainMenu");
+            Scene n = SceneManager.GetActiveScene();
+            if(n.name == "Level1")
+            {
+                SceneManager.LoadScene("Level2");
+            }
+            else if(n.name == "Level2")
+            {
+                SceneManager.LoadScene("Level3");
+            }
+            else if(n.name == "Level3")
+            {
+                SceneManager.LoadScene("EndGame");
+            }
+            else
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
         }
 
     }

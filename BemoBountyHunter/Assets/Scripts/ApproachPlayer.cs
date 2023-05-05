@@ -20,11 +20,11 @@ public class ApproachPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        step += .006f * Time.deltaTime;
+        step += .008f * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, step);
         float dist = Vector3.Distance(player.position, transform.position);
-        if(dist < .05f){
-            SceneManager.LoadScene("MainMenu");
+        if(dist < .5f){
+            SceneManager.LoadScene("Level1-BemoVer");
         }
     }
 }
