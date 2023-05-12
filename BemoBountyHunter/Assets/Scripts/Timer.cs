@@ -6,7 +6,7 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     private float curTime;
-    private bool isTimerRunning;
+    public bool isTimerRunning;
 
     public TMP_Text textObject;
     public float startTimeSeconds;
